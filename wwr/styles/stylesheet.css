@@ -1,0 +1,86 @@
+/* <td class="primary"> #3E442B </td> green
+<td class="secondary"> #E4572E </td> orange
+<td class="accent1"> #FFBA49 </td> yellow
+<td class="accent2"> #AAADC4 </td> blue
+<td class="accent3"> #29335C </td>  dark blue*/
+
+body{
+    background-color: #AAADC4;
+}
+
+header{
+    background-color: #E4572E;
+
+}
+#logo_link{
+    display:block;
+}
+#hero-image{
+    width:100%;
+}
+.icon{
+    width: 40em
+}
+#logo_link:hover{
+    background-color: #E4572E;
+}
+nav a:hover{
+    background-color: #FFBA49;
+}
+#content{
+    max-width:1600px;
+    margin: 0 auto;
+}
+img.social-media{
+    width:40px;
+    height:auto;
+}
+
+
+
+
+
+#background{
+    height:725px;
+    background-color: #E4572E;
+}
+
+nav a{
+    text-align:center;
+    text-decoration: none;
+}
+
+#hero-msg {
+    text-align:center;
+    color:rgb(255, 255, 255, 50) 
+}
+
+.button{
+    text-align:center;
+    background-color: #29335C;
+    color: #AAADC4;
+    text-decoration: none;
+}
+
+.button:hover{
+    background-color: #E4572E;
+    color:#FFBA49;
+    text-decoration: underline;
+}
+
+.Home-writing{
+    text-align:center;
+}
+
+footer{
+    background-color: #29335C;
+    color:#AAADC4;
+    text-decoration: underline;
+}
+
+#contact {
+    display:block;
+    background-color: #29335C;
+    color:#AAADC4;
+    text-decoration: underline;
+}

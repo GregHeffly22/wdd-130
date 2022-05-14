@@ -6,17 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gnarly Raftin'</title>
     <link type="text/css" rel="stylesheet" href="styles/stylesheet.css"/>
-    <style>
-        *,
-        *:before,
-        *:after{
-            box-sizing: border-box;
-        }
-    </style>
 </head>
 
 <body>
-<div>
+<div id="content">
     <header>
 
         <nav>
@@ -24,50 +17,37 @@
                 <img src="images/signature.png" alt="Logo">
              </a>
             
-        
             <a href="index.html">Home</a>
             <a href="#">Page 1</a>
-            <a href="https://wireframe.cc/1wlUAh" alt="wireframe">Wireframe</a>
+            <a href="https://byui-wdd.github.io/wdd130/rafting_images/wireframe_home.png" alt="wireframe">Wireframe</a>
             <a href="https://gregheffly22.github.io/wdd-130/wwr/Planning/site-plan-rafting.html">Site Plan</a>
         </nav>
     </header>
    
     <div id="hero">
-        <img src="images/river-wide3.jpeg" alt="greetings" >
+        <img id="hero-image" src="images/river-wide3.jpeg" alt="greetings" >
+        <h1 id="hero-msg">Hero Message</h1>
     </div>
 
     <main>
-        <div class="Home-writing">
-            <p>Add History</p>
-            <h1>History of our Organization</h1>
-            <img src="images/rafting12_1024.jpeg" alt="greetings" >
-        </div>
-        
-        <div class="Home-writing">
-            <h2>What to expect</h2>
-            <p>What a cool place, here is why</p>
-            <img src="images/rafting3_1024.jpeg" alt="greetings" >
-        </div>
-        
-        <div class="Home-writing">
-            <h3>Why you should come</h3>
-            <p>This place is fun</p>
-            <img src="images/rafting54_1024.jpeg" alt="greetings" >
-        </div>
-        
-    </main>
-
-    <div class="reservation">
-        <h4> Reservations</h4>
-        <p>About reservations</p>
-        <span>Link to reservations</span>
-    </div>
+        <section class="Home-writing">
+            <h2 class="button">History of our Organization</h2>
+            <img class="icon" src="images/rafting12_1024.jpeg" alt="greetings" >
+        </section>
+   
+        <section class="Home-writing">
+            <h3 class="button">What to expect</h3>
+          
+            <img class="icon" src="images/rafting3_1024.jpeg" alt="greetings" >
+        </section>
     
-    <div class="review">
-        <h5>Reviews</h5>
-        <span>link to reviews</span>
-        <p>Leave a Review!</p>
-    </div>
+        <section class="Home-writing">
+            <h4 class="button">Why you should come</h4>
+    
+            <img class="icon" src="images/rafting54_1024.jpeg" alt="greetings" >
+        </section>
+        <div id="background"></div>
+    </main>
    
     <footer>
         <p>
@@ -75,7 +55,14 @@
             © Gnarly Raftin' 2022 <br>
             Greg Evans <br>
             <a href="Planning/site-plan-rafting.html">Site Plan</a><br>
-            <a href="#">Contact Us</a>
+            
+            <a href="https://twitter.com/" target="_blank" alt="twitter" >
+                <img class="social-media" src="images/Twitter-logo.jpeg">
+            </a>
+            <a href="https://facebook.com/" target="_blank" alt="facebook" >
+                <img class="social-media" src="images/Facebook-logo.png">
+            </a>
+            <a id="contact" href="#">Contact Us</a>
         </p>
     </footer>
 </div>
