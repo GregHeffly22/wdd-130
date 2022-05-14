@@ -1,0 +1,41 @@
+body {
+    background-color: lightpink;
+}
+    
+article {
+    text-align: center;
+    
+}
+
+article h1{
+    color: white;
+}
+
+article h1:hover{
+    color: black;
+}
+
+article blockquote.top{
+    color: white;
+    max-width:600px;
+}
+
+article figcaption.top{
+    color: white;
+}
+
+article ol {
+    margin: 25px 500;
+    max-width: 680x;
+    text-align:left;
+    font-weight:bold;
+}
+
+article img {
+    max-width: 300px;
+    height: auto;
+}
+
+figcaption cite {
+    display: block;
+}
