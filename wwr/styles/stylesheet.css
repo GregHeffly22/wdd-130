@@ -12,14 +12,16 @@ header{
     background-color: #E4572E;
 
 }
-#logo_link{
-    display:block;
+nav a img{
+    width: 80px;
+    height: auto;
 }
+
 #hero-image{
     width:100%;
 }
 .icon{
-    width: 40em
+    width: 80px;
 }
 #logo_link:hover{
     background-color: #E4572E;
