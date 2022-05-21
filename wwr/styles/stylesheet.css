@@ -4,74 +4,124 @@
 <td class="accent2"> #AAADC4 </td> blue
 <td class="accent3"> #29335C </td>  dark blue*/
 
-body{
-    background-color: white;
-}
-
-header{
-    background-color: #AAADC4;
-
-}
-nav a img{
-    width: 80px;
-    height: auto;
-}
-
-#hero-image{
-    width:100%;
-}
-.icon{
-    width: 80px;
-}
-#logo_link:hover{
-    background-color: #E4572E;
-}
-nav a:hover{
-    background-color: #FFBA49;
-}
-#content{
-    max-width:1600px;
-    margin: 0 auto;
-}
-img.social-media{
-    width:40px;
-    height:auto;
-}
-
-
-
-
-
-#background{
-    height:725px;
-    background-color: #E4572E;
-}
-
-nav a{
-    text-align:center;
-    text-decoration: none;
-}
-
-#hero-msg {
-    text-align:center;
-    color:rgb(255, 255, 255, 50) 
-}
-
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@200&family=Roboto&family=Ubuntu:wght@300&display=swap');
 *,
 *:before,
 *:after {
     box-sizing: border-box;
 }
 
+body{
+    background-color: white;
+    font-family: Lato, Roboto, sans-serif;
+    font-size: 22px;
+    margin:0;
+    padding:0;
+}
+
+header{
+    background-color: #AAADC4;
+    padding:5px;
+    
+
+}
+
+h2{
+    margin:0;
+}
+
+nav a img{
+    width: 400px;
+    height: auto;
+}
+
+nav a:hover{
+    background-color: #FFBA49;
+}
+
+
+nav a{
+    text-align:center;
+    text-decoration: none;
+    margin:10px;
+    padding:25px;
+}
+
+main section img{
+    box-sizing:border-box;
+}
+
+footer{
+    color: #29335C;
+    background-color:#AAADC4;
+    text-decoration: underline;
+    padding: 25px 50px;
+
+}
+
+/* These are the ID's */
+#hero-image{
+    width:100%;
+}
+
+#logo_link img{
+    margin:10px;
+    height:5em;
+    width:auto;
+    padding-top: 5px;
+}
+
+#content{
+    max-width:1600px;
+    margin: 0 auto;
+}
+#background{
+    height:725px;
+    background-color: #E4572E;
+    margin-top:100px;
+}
+
+#hero-msg {
+    font-size: 2em;
+    font-family: Oswald, Ubuntu, serif;
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color:#FFBA49;
+    
+
+}
+#contact {
+    display:block;
+    color: #29335C;
+    background-color:#AAADC4;
+    text-decoration: underline;
+}
+
+
+.book:hover{
+    color:#FFBA49;
+}
+
+/* These are the classes */
+.icon{
+    width: 400px;
+    margin: 10px, auto;
+    border: 5px solid #E4572E;
+    
+}
 .button{
     min-width: 100px;
     max-width: 400px;
     text-align:center;
     border: 3px solid black;
-    margin: 10px auto;
+    margin: 100px auto 10px auto;
     background-color: #29335C;
     color: #AAADC4;
     text-decoration: none;
+    border-radius: 5px;
 }
 
 .button:hover{
@@ -80,19 +130,46 @@ nav a{
     text-decoration: underline;
 }
 
-.Home-writing{
+main section.home-writing{
     text-align:center;
 }
 
-footer{
-    background-color: #29335C;
-    color:#AAADC4;
+.book{
+    position:absolute;
+    top:auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:18px;
+    color: #E4572E;
+    text-decoration: none;
+    margin-top: 50px;
+}
+
+.join{
+    font-size:18px;
+    background-color:#E4572E;
+    color: #FFBA49;
+    text-decoration: none;
+    text-align: center;
+    max-width:400px;
+    min-width:50px;
+    width:7em;
+    height:auto;
+    border: 3px solid black;
+    margin: 10px auto;
+    text-decoration:none;
+    margin-top: 50px;
+    border-radius:5px;
+}
+
+.join:hover{
+    background-color: #FFBA49;
+    color:#E4572E;
     text-decoration: underline;
 }
 
-#contact {
-    display:block;
-    background-color: #29335C;
-    color:#AAADC4;
-    text-decoration: underline;
+img.social-media{
+    width:40px;
+    height:auto;
+    padding-top: 15px;
 }
