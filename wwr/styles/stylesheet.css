@@ -90,7 +90,6 @@ footer{
     left:50%;
     transform: translate(-50%, -50%);
     color:#FFBA49;
-    
 
 }
 #contact {
@@ -108,7 +107,7 @@ footer{
 /* These are the classes */
 .icon{
     width: 400px;
-    margin: 10px, auto;
+    margin: 10px auto;
     border: 5px solid #E4572E;
     
 }
