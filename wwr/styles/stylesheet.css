@@ -15,7 +15,7 @@
 
 body{
     background-color: white;
-    font-family: Lato, Roboto, sans-serif;
+    font-family: 'Oswald', 'Lato', 'Roboto', sans-serif;
     font-size: 22px;
     margin:0;
     padding:0;
@@ -109,10 +109,10 @@ footer{
 }
 
 #hero-msg {
-    margin: auto;
+    margin: 30px auto;
     text-align: center;
     font-size: 2em;
-    font-family: Oswald, Ubuntu, serif;
+    font-family: 'Nuosu SIL', 'Ubuntu', serif;
     color:#FFBA49;
 
 }
@@ -201,7 +201,7 @@ main section.msg {
     grid-row: 7/8;
 }
 .book{
-    padding: 5px;
+    padding: 5px 20px;
     margin: 20px auto; 
     max-width: 150px;
     font-size:18px;
@@ -210,6 +210,7 @@ main section.msg {
     background-color:#FFBA49;
     border: 5px  solid #E4572E;
     border-radius: 10px;
+    text-align: center;
 } 
 
  .join{
