@@ -1,36 +1,10 @@
-
-html, body{
+html, body {
     height: 100%;
-    margin: 0;
-    padding: 0;
-}
-body {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 200px 1fr auto;
-
+    margin:0;
+    padding:0;
 }
 
-article{ 
-    text-align: center;
-}
+label,input {
+    display: block;
 
-article #subtitle{
-   padding-top: 20px;
-}
-
-footer{
-    background-color: #3f5b8b;
-    color: white;
-    font-size: bold;
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-footer p{
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-footer div{
-    padding: 15px 0;
 }
