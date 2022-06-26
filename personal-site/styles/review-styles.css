@@ -1,0 +1,7 @@
+body, h1, h2, h4{
+    margin: 0;
+    padding: 0;
+}
+.image-left, .image-right{
+    height:200px;
+}
