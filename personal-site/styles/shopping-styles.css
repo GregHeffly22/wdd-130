@@ -5,3 +5,7 @@ body, h1, h2, h4{
 .image-left, .image-right{
     height:200px;
 }
+
+#logo {
+    height: 30px;
+}
