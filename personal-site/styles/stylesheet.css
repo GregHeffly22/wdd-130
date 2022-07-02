@@ -7,11 +7,12 @@
 }
 
 body {
+    min-width: 250px;
     margin:0;
     padding: 0;
   }
 header{
-    background-color: var(--my-dark-blue);
+    background-color: var(--my-light-blue);
 }
 
 button{
@@ -27,6 +28,14 @@ button{
 
 h1{
     background-color: var(--my-green);
+}
+section p{
+    background-color: var(--my-green);
+}
+
+footer{
+    background-color: var(--my-light-blue);
+    color: car(--my-dark-blue);
 }
 
 @media screen and (max-width: 780px) {
@@ -45,7 +54,8 @@ h1{
     
     
     #logo{
-        width: 200px;
+        width: 140px;
+        margin: 5px 0px 5px 15px;
     }
 
     #menu {
@@ -57,10 +67,11 @@ h1{
     }
     .links{
         display: none;
-        background-color: var(--my-light-blue);
+        background-color: var(--my-pink);
         z-index: 1;
         color: var(--my-dark-blue);
         text-decoration: none;
+        padding: 2px 4px;
 
     }
     #dropdown-box:hover .links {
@@ -71,7 +82,7 @@ h1{
         display: inline-block;
         align-self: center;
         justify-self: right;
-        margin: 0 30px;
+        margin: 0 15px 0 5px;
     }
    
    
@@ -100,6 +111,21 @@ h1{
         text-align: center;
     }
 
+    h1 {
+        justify-self: center;
+        width: 60%;
+        padding: 5px
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    footer div{
+        margin: 5px 25px 5px 25px;
+    }
 
   }
 
