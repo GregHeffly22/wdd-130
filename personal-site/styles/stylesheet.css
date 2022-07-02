@@ -1,7 +1,105 @@
+:root {
+    --my-dark-blue: #17255A;
+    --my-pink: #847996;
+    --my-yellow: #F4ECD6; 
+    --my-light-blue: #a9d3ff;
+    --my-green: #bfd7b5;
+}
+
+body {
+    margin:0;
+    padding: 0;
+  }
+header{
+    background-color: var(--my-dark-blue);
+}
+
+button{
+    display: none;
+}
 #logo{
-    height:30px;
+    display: inline-block;
 }
 
 #skateboard-man, #skateboard-woman, #shoe-feet{
     height:200px;
 }
+
+h1{
+    background-color: var(--my-green);
+}
+
+@media screen and (max-width: 780px) {
+    body{
+        font-size: 1em;
+    }
+
+    header nav{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+   
+   
+    /* This is where I start the Header */
+    
+    
+    
+    #logo{
+        width: 200px;
+    }
+
+    #menu {
+        display: block;
+        background: var(--my-green);
+        font-size: 3em;
+        color: var(--my-dark-blue);
+    
+    }
+    .links{
+        display: none;
+        background-color: var(--my-light-blue);
+        z-index: 1;
+        color: var(--my-dark-blue);
+        text-decoration: none;
+
+    }
+    #dropdown-box:hover .links {
+        display: block;
+        margin:0;
+    }
+    #dropdown-box{
+        display: inline-block;
+        align-self: center;
+        justify-self: right;
+        margin: 0 30px;
+    }
+   
+   
+   
+    /* Start Main */
+
+
+    main{
+        margin: 20px;
+        display: grid;
+    }
+
+    main img{
+        justify-self: center;
+        border: solid 4px var(--my-green) ;
+        box-shadow: 10px 10px 15px var(--my-green);
+    }
+
+    main img:hover {
+        opacity: .6;
+        transform:scale(1.1);
+    }
+
+    
+     section h2, section h3, section h4{
+        text-align: center;
+    }
+
+
+  }
+
