@@ -152,7 +152,7 @@ footer{
 
   }
 
-@media screen and (max-width: 1600px) and (min-width: 781px){
+@media screen and (min-width: 781px){
    body {
     font-size: 1.2em;
    }
