@@ -46,11 +46,11 @@ main img{
     box-shadow: 10px 10px 15px var(--my-green);
 
 }
-main img:hover {
+main a img:hover {
     opacity: .6;
     transform:scale(1.1);
 }
-
+ 
 #logo{
     display: inline-block;
 }
@@ -197,6 +197,7 @@ footer{
         box-shadow: none;
         border: none;
         display: block;
+
     }
     aside:nth-of-type(2){
         justify-self: right;
