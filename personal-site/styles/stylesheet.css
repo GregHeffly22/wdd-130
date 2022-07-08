@@ -22,10 +22,13 @@ body {
     color: var(--my-dark-blue);
     font-family: var(--paragraph-font);
   }
+
 h1, h2, h3, h4, nav{
     font-family: var(--heading-font);
 }
-
+.icons:hover{
+    background-color: white;
+}
 header nav{
     background-color: var(--my-light-blue);
     display: grid;
@@ -83,7 +86,7 @@ footer{
     #menu {
         display: block;
         background: var(--my-green);
-        font-size: 3em;
+        font-size: 2em;
         color: var(--my-dark-blue);
     
     }
@@ -187,13 +190,25 @@ footer{
         grid-column: 6;
     }
 
+    /* Aside Code here */
+
+
+    .side-pattern{
+        box-shadow: none;
+        border: none;
+        display: block;
+    }
+    aside:nth-of-type(2){
+        justify-self: right;
+    }
+
 
     /* This is where the main content starts */
 
     main{
         display: grid; 
         grid-template-columns: 1fr 275px 50px 250px 1fr;
-        grid-template-rows:  100px 100px 300px 100px 300px 100px 300px 1fr ;
+        grid-template-rows:  100px 100px 300px 100px 300px 100px 300px 1fr 183px;
     }
     h1{
         grid-row: 1;
@@ -212,16 +227,21 @@ footer{
         padding-left: 8px;
         margin-right: 120px;
     }
-    
-    #shoe-feet{
+    main a:nth-of-type(1){
         grid-column: 2;
         grid-row:3;
+    }
+    #shoe-feet{
+        
         height: 80%;
         justify-self: right;
     }
-    #skateboard-woman{
+    main a:nth-of-type(2){
         grid-column: 4/5;
         grid-row: 5;
+    }
+    #skateboard-woman{
+       
         height: 80%;
     }
     #reviews{
@@ -232,10 +252,12 @@ footer{
     #reviews h3 {
         margin-right: 235px;
     }
-
-    #skateboard-man{
+    main a:nth-of-type(3){
         grid-column: 2;
         grid-row: 7;
+    }
+    #skateboard-man{
+        
         height: 80%;
         justify-self: right;
 
@@ -275,4 +297,10 @@ footer{
         margin: 30px 10px;
     }
     
+}
+
+@media screen and (max-width: 1000px) {
+    aside{
+        display: none;
+    }
 }
