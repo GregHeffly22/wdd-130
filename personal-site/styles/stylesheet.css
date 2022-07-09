@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Crimson+Text:wght@600&family=Fira+Sans&family=Heebo&family=Lato&family=Roboto&family=Rubik&family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+
+
 :root {
     --my-dark-blue: #17255A;
     --my-pink: #847996;
@@ -214,7 +218,7 @@ footer{
     h1{
         grid-row: 1;
         grid-column: 2/5;
-        margin-right: 180px;
+        margin-right: 120px;
     }
     #message{
         grid-column: 3/5;
@@ -226,7 +230,7 @@ footer{
     }
     #message h2{
         padding-left: 8px;
-        margin-right: 120px;
+        margin-right: 100px;
     }
     main a:nth-of-type(1){
         grid-column: 2;
@@ -251,7 +255,7 @@ footer{
        
     }
     #reviews h3 {
-        margin-right: 235px;
+        margin-right: 215px;
     }
     main a:nth-of-type(3){
         grid-column: 2;
@@ -273,7 +277,7 @@ footer{
     }
     h4 {
         font-size: 1.25em;
-        margin-right: 190px
+        margin-right: 175px
     }
     h3{
         font-size: 1.3em;

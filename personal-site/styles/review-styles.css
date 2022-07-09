@@ -1,11 +1,238 @@
-body, h1, h2, h4{
-    margin: 0;
-    padding: 0;
-}
-.image-left, .image-right{
-    height:200px;
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Crimson+Text:wght@600&family=Fira+Sans&family=Heebo&family=Lato&family=Roboto&family=Rubik&family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+
+
+:root {
+    --my-dark-blue: #17255A;
+    --my-pink: #847996;
+    --my-yellow: #F4ECD6; 
+    --my-light-blue: #a9d3ff;
+    --my-green: #bfd7b5;
+    --heading-font: 'Arvo', 'Crimson+Text', 'Yanone+Kaffeesatz', serif;
+    --paragraph-font: 'Fira+sans', 'Rubik', 'Heeba', 'Lato', 'Roboto', sans-serif;
 }
 
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+body {
+    min-width: 250px;
+    margin:0;
+    padding: 0;
+    color: var(--my-dark-blue);
+    font-family: var(--paragraph-font);
+  }
+
+h1, h2, h3, h4, nav{
+    font-family: var(--heading-font);
+}
+header nav{
+    background-color: var(--my-light-blue);
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    
+    
+}
+
+button{
+    display: none;
+}
+main img{
+    border: solid 4px var(--my-green) ;
+    box-shadow: 10px 10px 15px var(--my-green);
+
+}
+main img:hover {
+    opacity: .6;
+    transform:scale(1.1);
+}
+ 
 #logo{
-    height: 30px;
+    display: inline-block;
+}
+
+h2{
+    background-color: var(--my-dark-blue);
+    border: 3px solid var(--my-pink);
+    color: var(--my-light-blue);
+}
+h4{
+    background-color: var(--my-yellow);
+    border: solid 3px var(--my-green);
+    color: var(--my-dark-blue);
+}
+footer{
+    background-color: var(--my-light-blue);
+    color: var(--my-dark-blue);
+}
+#reviews h3, #shopping h4, #message h2{
+    background-color: var(--my-light-blue);
+}
+
+@media screen and (max-width: 780px) {
+    body{
+        font-size: 1em;
+    }
+    /* This is where I start the Header */
+    
+    
+    
+    #logo{
+        width: 140px;
+        margin: 5px 0px 5px 15px;
+    }
+
+    #menu {
+        display: block;
+        background: var(--my-green);
+        font-size: 2em;
+        color: var(--my-dark-blue);
+    
+    }
+    .links{
+        display: none;
+        background-color: var(--my-pink);
+        z-index: 1;
+        color: var(--my-dark-blue);
+        text-decoration: none;
+        padding: 2px 4px;
+
+    }
+    #dropdown-box:hover .links {
+        display: block;
+        margin:0;
+    }
+    #dropdown-box{
+        display: inline-block;
+        align-self: center;
+        justify-self: right;
+        margin: 0 15px 0 5px;
+    }
+   
+   
+   
+    /* Start Main */
+
+
+    main{
+        margin: 20px;
+        display: grid;
+        justify-content: center;
+
+        
+    }
+
+    main img{
+        justify-self: center;
+        width: 150px;
+
+    }
+
+    h2, h4{
+        max-width: fit-content;
+        justify-self: center;
+    }
+
+
+    /* Start Footer */
+
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    footer div{
+        margin: 5px 25px 5px 25px;
+    }
+
+  }
+
+@media screen and (min-width: 781px){
+   body {
+    font-size: 1.2em;
+   }
+    #logo{
+        width: 300px;
+        grid-column: 1;
+    }
+    nav div{
+        display: grid;
+        grid-template-columns: 1fr 100px 2fr 100px 2fr 110px 1fr;
+        font-size: 1.5em;
+        text-align: center;
+        grid-column: 2;
+    }
+    div a{
+        text-decoration: none;
+    }
+    
+    div a:hover {
+        background-color: var(--my-pink);
+        color: var(--my-dark-blue);
+        
+    }
+
+    #dropdown-box a:nth-of-type(1){
+        grid-column: 2;
+    }
+    #dropdown-box a:nth-of-type(2){
+        grid-column: 4;
+    }
+    #dropdown-box a:nth-of-type(3){
+        grid-column: 6;
+    }
+
+    /* Aside Code here */
+
+
+    .side-pattern{
+        box-shadow: none;
+        border: none;
+        display: block;
+
+    }
+    aside:nth-of-type(2){
+        justify-self: right;
+    }
+
+
+    /* This is where the main content starts */
+
+   main img{
+    width: 300px
+   }
+
+    /* Here is the footer*/
+
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 3fr;
+        
+    }
+
+    footer div{
+        justify-self: center;
+        margin: 30px 10px;
+    }
+    #social-media-box{
+        justify-self: right;
+        margin: 30px 10px;
+    }
+    
+}
+
+@media screen and (max-width: 1000px) {
+    aside{
+        display: none;
+    }
 }
