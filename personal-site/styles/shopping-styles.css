@@ -1,11 +1,367 @@
-body, h1, h2, h4{
-    margin: 0;
-    padding: 0;
-}
-.image-left, .image-right{
-    height:200px;
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Crimson+Text:wght@600&family=Fira+Sans&family=Heebo&family=Lato&family=Roboto&family=Rubik&family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+
+
+:root {
+    --my-dark-blue: #17255A;
+    --my-pink: #847996;
+    --my-yellow: #F4ECD6; 
+    --my-light-blue: #a9d3ff;
+    --my-green: #bfd7b5;
+    --heading-font: 'Arvo', 'Crimson+Text', 'Yanone+Kaffeesatz', serif;
+    --paragraph-font: 'Fira+sans', 'Rubik', 'Heeba', 'Lato', 'Roboto', sans-serif;
 }
 
-#logo {
-    height: 30px;
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+body {
+    min-width: 250px;
+    margin:0;
+    padding: 0;
+    color: var(--my-dark-blue);
+    font-family: var(--paragraph-font);
+  }
+
+h1, h2, h3, table, nav{
+    font-family: var(--heading-font);
+}
+header nav{
+    background-color: var(--my-light-blue);
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    
+    
+}
+
+button{
+    display: none;
+}
+main img{
+    border: solid 4px var(--my-green) ;
+    box-shadow: 10px 10px 15px var(--my-green);
+
+}
+ 
+#logo{
+    display: inline-block;
+}
+
+h2{
+    background-color: var(--my-dark-blue);
+    border: 3px solid var(--my-pink);
+    color: var(--my-light-blue);
+    
+}
+table{
+    background-color: var(--my-yellow);
+    border: solid 3px var(--my-green);
+    color: var(--my-dark-blue);
+    
+
+
+}
+td, tr{
+    padding: 3px;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+}
+footer{
+    background-color: var(--my-light-blue);
+    color: var(--my-dark-blue);
+}
+#reviews h3, #shopping table, #message h2{
+    background-color: var(--my-light-blue);
+}
+
+@media screen and (max-width: 780px) {
+    body{
+        font-size: 1em;
+    }
+    /* This is where I start the Header */
+    
+    
+    
+    #logo{
+        width: 140px;
+        margin: 5px 0px 5px 15px;
+    }
+
+    #menu {
+        display: block;
+        background: var(--my-green);
+        font-size: 2em;
+        color: var(--my-dark-blue);
+    
+    }
+    .links{
+        display: none;
+        background-color: var(--my-pink);
+        z-index: 1;
+        color: var(--my-dark-blue);
+        text-decoration: none;
+        padding: 2px 4px;
+
+    }
+    #dropdown-box:hover .links {
+        display: block;
+        margin:0;
+    }
+    #dropdown-box{
+        display: inline-block;
+        align-self: center;
+        justify-self: right;
+        margin: 0 15px 0 5px;
+    }
+   
+   
+   
+    /* Start Main */
+
+
+    main{
+        margin: 20px;
+        display: grid;
+        justify-content: center;
+
+        
+    }
+
+
+    main img{
+        justify-self: center;
+        width: 150px;
+
+    }
+
+    h2{
+        text-align: center;
+        justify-self: center;
+        max-width: fit-content;
+        margin: 10px auto;
+        
+    }
+
+    td{
+        width:75px;
+    }
+    tr td:nth-of-type(1){
+        display: none;
+    }
+
+    /* Start Footer */
+
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    footer div{
+        margin: 5px 25px 5px 25px;
+    }
+
+  }
+
+@media screen and (min-width: 781px){
+   body {
+    font-size: 1.2em;
+   }
+   #logo{
+    width: 300px;
+    grid-column: 1;
+}
+    nav div{
+    display: grid;
+    grid-template-columns: 1fr 100px 2fr 100px 2fr 110px 1fr;
+    font-size: 1.5em;
+    text-align: center;
+    grid-column: 2;
+    }
+    div a{
+    text-decoration: none;
+    }
+
+    div a:hover {
+    background-color: var(--my-pink);
+    color: var(--my-dark-blue);
+    
+    }
+
+    #dropdown-box a:nth-of-type(1){
+    grid-column: 2;
+    }
+    #dropdown-box a:nth-of-type(2){
+    grid-column: 4;
+    }   
+    #dropdown-box a:nth-of-type(3){
+    grid-column: 6;
+    }
+
+    /* Aside Code here */
+
+
+    .side-pattern{
+        box-shadow: none;
+        border: none;
+        display: block;
+        width: 100px;
+        height:fit-content
+        
+
+    }
+    aside:nth-of-type(2){
+        justify-self: right;
+        grid-column: 4;
+        grid-row: 1/15;
+    }
+    aside:nth-of-type(1){
+        grid-column: 1;
+        grid-row: 1/15;
+    }
+
+    /* This is where the main content starts */
+
+   main img{
+        width: 300px;
+   }
+
+   main{
+        display: grid;
+        grid-template-columns: 1fr 300px 300px 1fr;
+        grid-template-rows: 1fr 150px 100px 200px 150px 100px 200px 150px 100px 200px 150px 120px 200px ;
+
+   }
+   h1{
+    text-decoration: underline;
+   }
+   .left-align{
+        grid-column: 2/4;
+   }
+   .right-align{
+        grid-column: 2/4;
+   }
+
+   /* First section */
+   .image-left:nth-of-type(1){
+        grid-column: 2;
+        grid-row: 2/4;
+   }
+
+   h2:nth-of-type(1){
+        grid-column: 3;
+        grid-row: 2;
+   }
+   table:nth-of-type(1){
+        grid-column: 3;
+        grid-row: 3;
+   }
+   .left-align:nth-of-type(1){
+        grid-row: 4;
+   }
+   
+
+
+   /* Second section */
+   main img:nth-of-type(2){
+        grid-column: 3;
+        grid-row: 5/7;
+   }
+   h2:nth-of-type(2){
+        grid-column: 2;
+        grid-row: 5;
+   }
+   table:nth-of-type(2){
+        grid-column: 2;
+        grid-row: 6;
+   }
+
+
+    /* Third section */
+    main img:nth-of-type(3){
+        grid-column: 2;
+        grid-row: 8/10;
+   }
+   h2:nth-of-type(3){
+        grid-column: 3;
+        grid-row: 8;
+   }
+   table:nth-of-type(3){
+        grid-column: 3;
+        grid-row: 9;
+   }
+
+
+    /* Fourth section */
+   main img:nth-of-type(4){
+        grid-column: 3;
+        grid-row: 11/13;
+   }
+   h2:nth-of-type(4){
+        grid-column: 2;
+        grid-row: 11;
+   }
+   table:nth-of-type(4){
+        grid-column: 2;
+        grid-row: 12;
+   }
+
+    /* I don't feel like copying and pasting a whole lot of rules */
+
+    h2:nth-of-type(2), h2:nth-of-type(4), table:nth-of-type(2), table:nth-of-type(4){
+        text-align: right;
+        justify-self: right;
+        max-width: fit-content;
+        margin: auto 0px;
+        
+    }
+    h2:nth-of-type(1), h2:nth-of-type(3), table:nth-of-type(1), table:nth-of-type(3){
+        text-align: left;
+        justify-self: left;
+        max-width: fit-content;
+        max-height: fit-content;
+        margin: auto 0px;
+        
+    }
+  
+
+
+
+
+
+    /* Here is the footer*/
+
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 3fr;
+        
+    }
+
+    footer div{
+        justify-self: center;
+        margin: 30px 10px;
+    }
+    #social-media-box{
+        justify-self: right;
+        margin: 30px 10px;
+    }
+    
+}
+
+@media screen and (max-width: 1000px) {
+    aside{
+        display: none;
+    }
+    header{
+        margin-bottom: 100px;
+    }
 }
