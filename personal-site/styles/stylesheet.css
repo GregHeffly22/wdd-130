@@ -169,7 +169,7 @@ footer{
     }
     nav div{
         display: grid;
-        grid-template-columns: 1fr 100px 2fr 100px 2fr 110px 1fr;
+        grid-template-columns: 1fr 100px 2fr 130px 2fr 140px 1fr;
         font-size: 1.5em;
         text-align: center;
         grid-column: 2;

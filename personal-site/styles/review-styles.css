@@ -168,7 +168,7 @@ footer{
 }
     nav div{
     display: grid;
-    grid-template-columns: 1fr 100px 2fr 100px 2fr 110px 1fr;
+    grid-template-columns: 1fr 100px 2fr 130px 2fr 140px 1fr;
     font-size: 1.5em;
     text-align: center;
     grid-column: 2;
@@ -272,6 +272,7 @@ footer{
    }
     main section:nth-of-type(2){
         grid-row: 7;
+        margin-top: 15px;
     }
 
     /* Third section */
@@ -288,7 +289,8 @@ footer{
         grid-row: 9;
    }
    main section:nth-of-type(3){
-    grid-row: 10;
+        grid-row: 10;
+        margin-top: 15px;
     }
 
     /* Fourth section */
